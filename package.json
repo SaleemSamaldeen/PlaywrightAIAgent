@@ -1,0 +1,20 @@
+{
+  "name": "playwrightaiagent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:seed": "playwright test seed.spec.ts",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report",
+    "mcp": "playwright run-test-mcp-server --config playwright.config.ts",
+    "mcp:sse": "playwright run-test-mcp-server --port 3100 --config playwright.config.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.64.1"
+  }
+}
